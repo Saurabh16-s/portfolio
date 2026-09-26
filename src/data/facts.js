@@ -1,4 +1,4 @@
-// Edit freely — one of these shows up every time a goal is scored in the game.
+
 export const facts = [
   "I'm a third-year CSE student at COER University, Roorkee.",
   "My go-to backend stack is Java + Spring Boot.",
@@ -10,5 +10,5 @@ export const facts = [
   "I like pairing React on the frontend with AWS services like EC2, S3, SES and SQS.",
   "Python is my language of choice for AI tooling and experiments.",
   "This pixel football game is built entirely with a hand-rolled Canvas game loop — no game engine.",
-  // Add more of your own here!
+  
 ]
