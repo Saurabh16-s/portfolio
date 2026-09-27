@@ -11,9 +11,6 @@ const WEEKS = 53
 const DAYS = WEEKS * 7
 const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 
-// Builds a plausible-looking year of activity: quieter stretches, occasional
-// bursts of several commits, lighter weekends. Edit the two chance/intensity
-// lines below to make it busier or calmer overall.
 function buildContributions() {
   const today = new Date()
   today.setHours(0, 0, 0, 0)
@@ -30,11 +27,11 @@ function buildContributions() {
     const dow = date.getDay()
     const weekIndex = Math.floor(i / 7)
 
-    // slow wave across the year = busier vs quieter multi-week stretches
+    
     const wave = (Math.sin(weekIndex * 0.35) + 1) / 2
     const weekendFactor = dow === 0 || dow === 6 ? 0.55 : 1
 
-    let count = -1 // -1 = future day, not rendered
+    let count = -1 
     if (date <= today) {
       const activityChance = (0.3 + wave * 0.4) * weekendFactor
       const roll = rand()
@@ -63,7 +60,6 @@ function levelColor(count) {
 const days = buildContributions()
 const totalContributions = days.filter((d) => d.count > 0).reduce((sum, d) => sum + d.count, 0)
 
-// figure out which week columns should get a month label
 const monthLabels = []
 let lastMonth = -1
 for (let w = 0; w < WEEKS; w++) {
