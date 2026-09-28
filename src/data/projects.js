@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Trippy',
-    tag: 'Tour & Travel',
+    tag: 'Tour & Travel Web application with Agentic AI ',
     image: '/projects/trip.png',
     description:
       'Full-stack travel booking platform — React, Spring Boot, PostgreSQL, AWS (EC2/SQS/SES) — with a LangGraph + Groq LLaMA 3.3 70B agentic AI microservice on FastAPI, Dockerized behind Nginx with DuckDNS/HTTPS. Primary proof point for internship applications.',
