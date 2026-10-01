@@ -1,4 +1,4 @@
-# saurabh.dev — Portfolio
+# Saurabh.dev — Portfolio
 
 A dark, terminal-style developer portfolio built with React + Vite + Tailwind CSS,
 featuring a playable pixel football game: score a goal and unlock a random fact.
